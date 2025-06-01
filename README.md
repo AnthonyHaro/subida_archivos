@@ -36,7 +36,7 @@ Aplicación desarrollada con **Ionic** que permite subir archivos a **Supabase**
 ## 🛠️ Tecnologías utilizadas
 
 - **Ionic Angular**
-- **Supabase (Storage)**
+- **Supabase**
 - **TypeScript**
 - **HTML / SCSS**
 
