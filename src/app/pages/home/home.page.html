@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Subir Archivo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="upload-card">
+    <ion-card-header>
+      <ion-card-title>Selecciona un archivo</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="icon-wrapper">
+        <ion-icon name="cloud-upload-outline" size="large" color="primary"></ion-icon>
+      </div>
+
+      <ion-button color="primary" expand="block" (click)="triggerFileInput()" class="btn-select">
+        Elegir archivo
+      </ion-button>
+
+      <input type="file" id="fileInput" (change)="onFileSelected($event)" hidden />
+
+      <p class="file-name" *ngIf="selectedFileName">{{ selectedFileName }}</p>
+
+      <ion-button
+        expand="block"
+        color="success"
+        [disabled]="!selectedFile"
+        (click)="uploadFile()"
+        class="btn-upload"
+      >
+        <ion-icon slot="start" name="arrow-up-circle-outline"></ion-icon>
+        Subir archivo
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
