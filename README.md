@@ -13,7 +13,7 @@ Aplicación desarrollada con **Ionic** que permite subir archivos a **Supabase**
 
 ---
 
-## 🖥️ Vista previa
+## 🖥️ VISUALIZACIÓN
 
 ### 🏠 Pantalla principal para subir el archivo
 
